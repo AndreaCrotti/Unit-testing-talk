@@ -14,6 +14,22 @@ Why
 
 Can you see the problem?
 
+Why 2
+=====
+
+Works, but is it right??
+
+.. literalinclude:: code/wrong.py
+    :pyobject: uppercase_words
+
+Never fails, but still clearly **wrong**
+
+.. code-block:: python
+
+    >>> uppercase_words("Word1")
+    >>> ['W', 'O', 'R', 'D', '1']
+
+
 Dynamic Python
 ==============
 
