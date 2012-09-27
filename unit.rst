@@ -28,6 +28,8 @@ Unit testing
 - watch it fail
 - make it pass
 
+.. show an example of this approach
+
 Testing sum
 ===========
 
