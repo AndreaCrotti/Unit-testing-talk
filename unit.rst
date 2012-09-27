@@ -9,14 +9,8 @@ Why
 
 **If it's not tested, it's broken**
 
-.. code-block:: python
-
-    def smart_function(arg):
-        if failure_condition:
-            report_error(arg1)
-        else:
-            normal_behaviour(arg)
-
+.. literalinclude:: code/funcs.py
+    :pyobject: smart_function
 
 Can you see the problem?
 
@@ -26,6 +20,13 @@ Dynamic Python
 - names are bound at run-time
 - things can change
 
+
+Unit testing
+============
+
+- write the test
+- watch it fail
+- make it pass
 
 Mocking
 =======
@@ -38,6 +39,9 @@ Trace program execution
 
 Demo time
 =========
+
+.. call people out to create a simple project done via unit testing.
+.. first write the test and then write the implementation
 
 
 Links
