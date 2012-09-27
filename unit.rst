@@ -28,6 +28,16 @@ Unit testing
 - watch it fail
 - make it pass
 
+Testing sum
+===========
+
+.. literalinclude:: code/funcs.py
+    :pyobject: test_adder
+
+.. literalinclude:: code/funcs.py
+    :pyobject: adder
+
+
 Mocking
 =======
 
