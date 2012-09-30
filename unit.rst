@@ -9,11 +9,17 @@ Functions
 
 *pure function*
 
+.. literalinclude:: code/funcs.py
+    :pyobject: adder
+
 
 Side effects
 ============
 
 .. something on testing classes (setUp tearDown)
+
+.. literalinclude:: code/funcs.py
+    :pyobject: silly_function
 
 
 Why
