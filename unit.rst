@@ -21,6 +21,7 @@ Side effects
 .. literalinclude:: code/funcs.py
     :pyobject: silly_function
 
+**WRONG**
 
 Why
 ===

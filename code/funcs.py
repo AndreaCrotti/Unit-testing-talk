@@ -19,4 +19,6 @@ test_adder()
 
 
 def silly_function(value):
+    global GLOBAL_VALUE
+    GLOBAL_VALUE += 1
     return value + GLOBAL_VALUE
