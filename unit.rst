@@ -4,6 +4,18 @@
 
 .. TODO: find a nice example to use to do the interactive talk
 
+Functions
+=========
+
+*pure function*
+
+
+Side effects
+============
+
+.. something on testing classes (setUp tearDown)
+
+
 Why
 ===
 
