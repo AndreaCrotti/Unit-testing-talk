@@ -5,3 +5,9 @@ def uppercase_words(words):
 
 
 print(uppercase_words("word1"))
+
+
+def remove_expired_files():
+    # use a global variable for the path
+    for log_file in glob(LOG_DIR):
+        pass

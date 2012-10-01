@@ -111,6 +111,11 @@ Real conversion
 .. - generating some results
 .. - writing back to the database
 
+.. check for expired files in the log directory and delete the expired ones
+
+.. literalinclude:: code/wrong.py
+    :pyobject: remove_expired_files
+
 
 Links
 =====
