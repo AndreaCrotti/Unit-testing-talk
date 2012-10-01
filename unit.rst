@@ -48,12 +48,25 @@ Never fails, but still clearly **wrong**
     >>> uppercase_words("Word1")
     >>> ['W', 'O', 'R', 'D', '1']
 
+- no compiler help
+- extremely dynamic language
+
 
 Dynamic Python
 ==============
 
 - names are bound at run-time
 - things can change
+
+.. literalinclude:: code/library.py
+
+
+Dynamic Python 2
+================
+
+Rebinding names from other modules!
+
+.. literalinclude:: code/prog.py
 
 
 Unit testing

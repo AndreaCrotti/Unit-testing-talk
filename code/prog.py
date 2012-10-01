@@ -1,3 +1,11 @@
-from library import function
+from library import run_func
 
-function()
+run_func()
+
+def failing():
+    print("In changed function")
+
+import library
+library.function = failing
+
+run_func()
