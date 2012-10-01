@@ -91,6 +91,10 @@ Testing sum
 Mocking
 =======
 
+*automating name binding*
+
+
+
 
 Coverage
 ========
