@@ -103,6 +103,14 @@ Demo time
 .. call people out to create a simple project done via unit testing.
 .. first write the test and then write the implementation
 
+Real conversion
+===============
+
+.. take something that is badly coded and rewrite it using tests
+.. - reading from the filesystem
+.. - generating some results
+.. - writing back to the database
+
 
 Links
 =====
