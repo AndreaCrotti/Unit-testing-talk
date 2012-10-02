@@ -2,31 +2,18 @@
  Unit testing
 ==============
 
-.. TODO: find a nice example to use to do the interactive talk
+**If it's not tested, it's broken**
 
-Functions
-=========
+Dynamic language
+================
 
-*pure function*
-
-.. literalinclude:: code/funcs.py
-    :pyobject: adder
-
-
-Side effects
-============
-
-.. something on testing classes (setUp tearDown)
-
-.. literalinclude:: code/funcs.py
-    :pyobject: silly_function
-
-**WRONG**
+- no type checking
+- no checked exceptions
+- no compilation stage
+- monkey patching
 
 Why
 ===
-
-**If it's not tested, it's broken**
 
 .. literalinclude:: code/funcs.py
     :pyobject: smart_function
@@ -50,6 +37,26 @@ Never fails, but still clearly **wrong**
 
 - no compiler help
 - extremely dynamic language
+
+Functions
+=========
+
+*pure function*
+
+.. literalinclude:: code/funcs.py
+    :pyobject: adder
+
+
+Side effects
+============
+
+.. something on testing classes (setUp tearDown)
+
+.. literalinclude:: code/funcs.py
+    :pyobject: silly_function
+
+**WRONG**
+
 
 
 Dynamic Python
