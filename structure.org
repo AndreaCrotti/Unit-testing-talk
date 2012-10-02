@@ -8,7 +8,6 @@ Plot behind the unit testing talk
 
 *** examples of bad function definitions
 
-
 * Functions
 
 ** Pure functions
@@ -25,6 +24,25 @@ Plot behind the unit testing talk
 
 *** How to write code
 
-* Unit testing module
+* unittest
 
 ** Setup / teardown
+
+** Test discovery
+
+** coverage
+
+** nose + coverage
+
+* Mock library
+
+** Testing side effect functions
+
+* Conclusions
+
+** Avoid side effect whenever possible
+
+** Build your programs bottom-up, composing small functions
+
+** Before writing the code, think how you could test it
+
