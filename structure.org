@@ -1,0 +1,30 @@
+Plot behind the unit testing talk
+
+* Python is very dynamic
+
+** no help from the compiler
+
+** very bad errors coming only at runtime
+
+*** examples of bad function definitions
+
+
+* Functions
+
+** Pure functions
+
+** Side effect, example of why they are bad
+
+** Test pure functions (with a simple module)
+
+* Testing
+
+** Unit testing, integration testing, functional testing
+
+** TDD and test first development
+
+*** How to write code
+
+* Unit testing module
+
+** Setup / teardown
