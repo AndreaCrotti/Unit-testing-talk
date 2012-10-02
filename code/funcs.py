@@ -13,7 +13,7 @@ def test_adder():
 
 
 def adder(a, b):
-    return 0
+    return a + b
 
 test_adder()
 
@@ -21,4 +21,4 @@ test_adder()
 def silly_function(value):
     global GLOBAL_VALUE
     GLOBAL_VALUE += 1
-    return value + GLOBAL_VALUE
+    return value

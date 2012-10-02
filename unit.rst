@@ -50,13 +50,11 @@ Functions
 Side effects
 ============
 
-.. something on testing classes (setUp tearDown)
+*In addition to returning a value, it also modifies some state or has an observable interaction with calling functions or the outside world*
+
 
 .. literalinclude:: code/funcs.py
     :pyobject: silly_function
-
-**WRONG**
-
 
 
 .. TODO: this should go before explaining about mock and similar things
