@@ -12,6 +12,9 @@ Dynamic language
 - no compilation stage
 - monkey patching
 
+.. show some examples of why these things can be bad (passing wrong types,
+.. raising things from anywhere and so on)
+
 Why
 ===
 
@@ -35,9 +38,6 @@ Never fails, but still clearly **wrong**
     >>> uppercase_words("Word1")
     >>> ['W', 'O', 'R', 'D', '1']
 
-- no compiler help
-- extremely dynamic language
-
 Functions
 =========
 
@@ -59,6 +59,8 @@ Side effects
 
 
 
+.. TODO: this should go before explaining about mock and similar things
+
 Dynamic Python
 ==============
 
@@ -75,6 +77,13 @@ Rebinding names from other modules!
 
 .. literalinclude:: code/prog.py
 
+
+Testing
+=======
+
+- Unit testing
+- Integration testing
+- Functional testing
 
 Unit testing
 ============
