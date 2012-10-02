@@ -26,6 +26,12 @@ Plot behind the unit testing talk
 
 ** Examples and demo about TDD
 
+** Regression testing
+
+** Remove the fear of touching code
+
+** Testing as documentation, show how to use
+
 * unittest libraries
 
 ** Setup / Teardown
