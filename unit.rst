@@ -56,8 +56,13 @@ Side effects
 .. literalinclude:: code/funcs.py
     :pyobject: silly_function
 
+::
 
-.. TODO: this should go before explaining about mock and similar things
+     >>> funcs.silly_function(1)
+     3
+     >>> funcs.silly_function(1)
+     4
+
 
 Dynamic Python
 ==============
@@ -141,3 +146,5 @@ Links
 .. _mock:
 .. _coverage:
 .. _nose:
+
+.. bad: 69edafd

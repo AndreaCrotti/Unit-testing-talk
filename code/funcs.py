@@ -1,10 +1,10 @@
 GLOBAL_VALUE = 0
 
-def smart_function(arg):
+def smart_function(arg0):
     if failure_condition:
-        report_error(arg1)
+        report_error(argO)
     else:
-        normal_behaviour(arg)
+        normal_behaviour(arg0)
 
 
 def test_adder():
@@ -21,4 +21,4 @@ test_adder()
 def silly_function(value):
     global GLOBAL_VALUE
     GLOBAL_VALUE += 1
-    return value
+    return (value * 2) + GLOBAL_VALUE
