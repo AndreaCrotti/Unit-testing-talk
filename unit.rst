@@ -203,9 +203,10 @@ Conclusion
 
 **Don’t worry about tests, Chuck Norris’s test cases cover your code too.**
 
-- testing is good
+- tests are good
+- tests are documentation
 - testing is easy
-- testing removes the fear of change
+- testing alleviates fear of change
 - testable code is *better code*
 
 
