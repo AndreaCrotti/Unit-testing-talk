@@ -110,7 +110,7 @@ Testing
   Individual software modules are combined and tested as a group.
 
 - **Validation testing**:
-impor
+
   Software system meets specifications and that it fulfills its intended purpose.
 
 
