@@ -193,7 +193,7 @@ Testing C code 2
 ================
 
 .. literalinclude:: code/test_c.py
-    :language: c
+    :language: python
 
 
 Conclusion
