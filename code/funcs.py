@@ -1,7 +1,7 @@
 GLOBAL_VALUE = 0
 
 def smart_function(arg0):
-    if failure_condition:
+    if rare_failure_condition():
         report_error(argO)
     else:
         normal_behaviour(arg0)

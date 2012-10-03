@@ -2,6 +2,7 @@ from library import run_func
 
 run_func()
 
+
 def failing():
     print("In changed function")
 

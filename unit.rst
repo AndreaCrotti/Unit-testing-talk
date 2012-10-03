@@ -35,8 +35,8 @@ Never fails, but still clearly **wrong**
 
 .. code-block:: python
 
-    >>> uppercase_words("Word1")
-    >>> ['W', 'O', 'R', 'D', '1']
+    >>> uppercase_words("word1")
+    ['W', 'O', 'R', 'D', '1']
 
 Functions
 =========

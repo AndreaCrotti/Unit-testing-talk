@@ -1,6 +1,6 @@
-def function():
+def lib_func():
     print("Running in the given library")
 
 
 def run_func():
-    function()
+    lib_func()
