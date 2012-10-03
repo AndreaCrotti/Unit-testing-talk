@@ -165,6 +165,24 @@ Real conversion
     :pyobject: remove_expired_files
 
 
+Testing C code
+==============
+
+- create a shared library
+- load it with *ctypes*
+- run it and check the results
+
+.. literalinclude:: code/sum.c
+    :language: c
+    :lines: 1-11
+
+Testing C code 2
+================
+
+.. literalinclude:: code/test_c.py
+    :language: c
+
+
 Conclusion
 ==========
 
