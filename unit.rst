@@ -2,6 +2,7 @@
  Unit testing
 ==============
 
+
 **If it's not tested, it's broken**
 
 Dynamic language
@@ -9,7 +10,7 @@ Dynamic language
 
 - no type checking
 - no checked exceptions
-- no compilation step
+- no compilation
 - monkey patching
 
 .. show some examples of why these things can be bad (passing wrong types,
@@ -70,11 +71,13 @@ Passing input X to function F will always return the same output Y.
 
 .. show how to test pure functions, in calc_one.py and calc_two.py
 
+
 Testing pure functions
 ======================
-
 .. literalinclude:: code/calc_one.py
     :lines: 1-16
+
+.. show examples from calc_one.py and calc_two.py
 
 Side effects
 ============
@@ -92,13 +95,23 @@ Side effects
      >>> funcs.silly_function(1)
      4
 
+.. TODO: should I show how to test this thing? or wait for later when name binding is explained?
+
 
 Testing
 =======
 
-- Unit testing
-- Integration testing
-- Functional testing
+- **Unit testing**:
+
+  Testing individual units of source code, where a *unit* is the smallest testable part.
+
+- **Integration testing**:
+
+  Individual software modules are combined and tested as a group.
+
+- **Validation testing**:
+impor
+  Software system meets specifications and that it fulfills its intended purpose.
 
 
 Unit testing
