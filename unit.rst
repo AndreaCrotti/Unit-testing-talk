@@ -206,7 +206,7 @@ Conclusion
 - tests are good
 - tests are documentation
 - testing is easy
-- testing alleviates fear of change
+- testing alleviates the fear of change
 - testable code is *better code*
 
 
