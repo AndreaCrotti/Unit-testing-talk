@@ -140,6 +140,14 @@ Real conversion
     :pyobject: remove_expired_files
 
 
+Conclusion
+==========
+
+- testing is good
+- testing is easy
+- testing removes the fear of change
+- testable code is *better code*
+
 Links
 =====
 
