@@ -53,16 +53,28 @@ Why 2
 .. literalinclude:: code/wrong.py
     :pyobject: uppercase_words
 
-Never fails, but still clearly **wrong**
+Does not fails, but still clearly **wrong**
 
 Functions
 =========
 
-*pure function*
+*Pure function*
 
 .. literalinclude:: code/funcs.py
     :pyobject: adder
 
+Passing input X to function F will always return the same output Y.
+
+- adder(1, 2) = 3
+- adder(3, 4) = 7
+
+.. show how to test pure functions, in calc_one.py and calc_two.py
+
+Testing pure functions
+======================
+
+.. literalinclude:: code/calc_one.py
+    :lines: 1-16
 
 Side effects
 ============
