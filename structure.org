@@ -1,6 +1,6 @@
 Plot behind the unit testing talk
 
-* Python is very dynamic
+* Why need testing
 
 ** No help from the compiler
 

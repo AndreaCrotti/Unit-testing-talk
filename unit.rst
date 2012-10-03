@@ -9,7 +9,7 @@ Dynamic language
 
 - no type checking
 - no checked exceptions
-- no compilation stage
+- no compilation step
 - monkey patching
 
 .. show some examples of why these things can be bad (passing wrong types,
@@ -18,25 +18,42 @@ Dynamic language
 Why
 ===
 
+.. rst-class:: build
+
+::
+   
+    Traceback (most recent call last):
+      File "funcs.py", line 45, in <module>
+        test_smart()
+      File "/home/andrea/.local/lib/python2.7/site-packages/mock.py", line 1224, in patched
+        return func(*args, **keywargs)
+      File "funcs.py", line 24, in test_smart
+        smart_function(100)
+      File "funcs.py", line 17, in smart_function
+        report_error(argO)
+    NameError: global name 'argO' is not defined
+
 .. literalinclude:: code/funcs.py
     :pyobject: smart_function
-
-Can you see the problem?
-
+    
 Why 2
 =====
 
-Works, but is it right??
+.. rst-class:: build
+
+::
+
+    ['W', 'O', 'R', 'D', '1']
+
+::
+
+    >>> uppercase_words("word1")
+
 
 .. literalinclude:: code/wrong.py
     :pyobject: uppercase_words
 
 Never fails, but still clearly **wrong**
-
-.. code-block:: python
-
-    >>> uppercase_words("word1")
-    ['W', 'O', 'R', 'D', '1']
 
 Functions
 =========
@@ -118,13 +135,10 @@ Mocking
 Coverage
 ========
 
-Trace program execution
+- set a tracer function
+- keep track of all the lines executed
+- show a report
 
-Demo time
-=========
-
-.. call people out to create a simple project done via unit testing.
-.. first write the test and then write the implementation
 
 Real conversion
 ===============
