@@ -143,10 +143,15 @@ Real conversion
 Conclusion
 ==========
 
+.. rst-class:: build
+
+**Don’t worry about tests, Chuck Norris’s test cases cover your code too.**
+
 - testing is good
 - testing is easy
 - testing removes the fear of change
 - testable code is *better code*
+
 
 Links
 =====
