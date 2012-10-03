@@ -81,22 +81,6 @@ Side effects
      4
 
 
-Dynamic Python
-==============
-
-- names are bound at run-time
-- things can change
-
-.. literalinclude:: code/library.py
-
-
-Dynamic Python 2
-================
-
-Rebinding names from other modules!
-
-.. literalinclude:: code/prog.py
-
 
 Testing
 =======
@@ -125,11 +109,27 @@ Testing sum
     :pyobject: adder
 
 
+Dynamic Python
+==============
+
+- names are bound at run-time
+- things can change
+
+.. literalinclude:: code/library.py
+
+
+Dynamic Python 2
+================
+
+Rebinding names from other modules!
+
+.. literalinclude:: code/prog.py
+
+
 Mocking
 =======
 
 *automating name binding*
-
 
 
 Coverage
