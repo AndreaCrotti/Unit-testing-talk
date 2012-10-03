@@ -4,6 +4,8 @@
 #include "sum.h"
 
 int sum(int a, int b) {
+    // bug to introduce
+    /* if (a == 20) return 1; */
     return a + b;
 }
 
