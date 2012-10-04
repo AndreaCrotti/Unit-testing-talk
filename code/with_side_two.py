@@ -37,6 +37,7 @@ class TestReadFromDisk(unittest.TestCase):
         res = with_side_one.read_from_disk()
         self.assertEqual(res, DESIRED)
 
+# TODO: should also check the condition case where the file does not exist
 
 # using unittest and mock
 @patch('with_side_one.FNAME', new=TMP)
