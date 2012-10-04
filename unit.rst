@@ -2,8 +2,27 @@
  Unit testing
 ==============
 
+.. TODO: where should I talk about Designing for testability??
 
 **If it's not tested, it's broken**
+
+Testing
+=======
+
+- **Unit testing**:
+
+  Testing individual units of source code, where a *unit* is the smallest testable part.
+
+- **Integration testing**:
+
+  Individual software modules are combined and tested as a group.
+
+- **Validation testing**:
+
+  Software system meets specifications and that it fulfills its intended purpose.
+
+**Design for testability**
+
 
 Dynamic language
 ================
@@ -95,23 +114,7 @@ Side effects
      >>> funcs.silly_function(1)
      4
 
-**Hard to test**
-
-
-Testing
-=======
-
-- **Unit testing**:
-
-  Testing individual units of source code, where a *unit* is the smallest testable part.
-
-- **Integration testing**:
-
-  Individual software modules are combined and tested as a group.
-
-- **Validation testing**:
-
-  Software system meets specifications and that it fulfills its intended purpose.
+**Hard to test!!**
 
 
 Unit testing
@@ -163,9 +166,12 @@ Coverage
 ========
 
 - set a tracer function
+- runs a script
 - keep track of all the lines executed
 - show a report
 
+.. integrates well with nose and other test runners
+.. TODO: talk about test discovery somewhere
 
 Real conversion
 ===============
