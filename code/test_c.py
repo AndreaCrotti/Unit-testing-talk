@@ -10,4 +10,4 @@ for i in range(100):
         assert libsum.sum(i, j) == i + j, "%d + %d failed!!" % (i, j)
 
 # which an hardcore Pythonist would write as
-assert all(libsum.sum(i, j) == (i + j) for i, j in product(range(100), range(100)))
+# assert all(libsum.sum(i, j) == (i + j) for i, j in product(range(100), range(100)))
