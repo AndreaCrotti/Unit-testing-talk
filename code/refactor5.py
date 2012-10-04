@@ -35,8 +35,8 @@ def update_to_database(res):
        cursor.execute('INSERT INTO table VALUES (%s)' % r)
 
 
-def long_crappy_function():
-    """Do a bit of everything
+def main():
+    """Update filtered result from a shell command to the database
     """
     out = run_ls()
     res = filter_output(out)

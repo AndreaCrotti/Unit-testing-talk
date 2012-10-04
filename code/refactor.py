@@ -3,7 +3,6 @@ Series of steps to pass from a messy function to many nice ones
 """
 
 import subprocess
-from os import chdir
 
 import MySQLdb
 

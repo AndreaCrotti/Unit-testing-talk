@@ -173,19 +173,6 @@ Coverage
 .. integrates well with nose and other test runners
 .. TODO: talk about test discovery somewhere
 
-Real conversion
-===============
-
-.. take something that is badly coded and rewrite it using tests
-.. - reading from the filesystem
-.. - generating some results
-.. - writing back to the database
-
-.. check for expired files in the log directory and delete the expired ones
-
-.. literalinclude:: code/wrong.py
-    :pyobject: remove_expired_files
-
 
 Testing C code
 ==============
