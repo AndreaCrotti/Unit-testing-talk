@@ -94,15 +94,15 @@ Passing input X to function F will always return the same output Y.
 - adder(1, 2) = 3
 - adder(3, 4) = 7
 
-.. show how to test pure functions, in calc_one.py and calc_two.py
+.. show how to test pure functions, in calc_one.py and calc_2.py
 
 
 Testing pure functions
 ======================
-.. literalinclude:: code/calc_one.py
+.. literalinclude:: code/calc_1.py
     :lines: 1-16
 
-.. show examples from calc_one.py and calc_two.py
+.. show examples from calc_1.py and calc_2.py
 
 Side effects
 ============
@@ -160,7 +160,6 @@ Dynamic Python 2
 Rebinding names from other modules!
 
 .. literalinclude:: code/prog.py
-
 
 
 Coverage
