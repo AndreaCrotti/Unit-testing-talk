@@ -95,7 +95,7 @@ Side effects
      >>> funcs.silly_function(1)
      4
 
-.. TODO: should I show how to test this thing? or wait for later when name binding is explained?
+**Hard to test**
 
 
 Testing
@@ -117,9 +117,12 @@ Testing
 Unit testing
 ============
 
-- write the test
-- watch it fail
-- make it pass
+Test Driven Development:
+
+1. write a specific test
+2. watch it fail
+3. make it pass
+4. go back to 1
 
 .. show an example of this approach
 
