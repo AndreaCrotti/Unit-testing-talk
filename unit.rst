@@ -162,11 +162,6 @@ Rebinding names from other modules!
 .. literalinclude:: code/prog.py
 
 
-Mocking
-=======
-
-*automating name binding*
-
 
 Coverage
 ========
