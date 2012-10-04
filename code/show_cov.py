@@ -8,9 +8,9 @@ def smart_division(a, b):
         raise Exception("Can not divide by 0")
 
     res = a / b
-    back_res = a * b
+    back_res = res * b
 
-    if back_res != res:
+    if back_res != a:
         return a / float(b)
     else:
         return res
