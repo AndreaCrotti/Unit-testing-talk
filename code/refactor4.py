@@ -3,7 +3,6 @@ Series of steps to pass from a messy function to many nice ones
 """
 
 import subprocess
-from os import chdir
 
 import MySQLdb
 
@@ -12,8 +11,7 @@ def run_ls():
     ## launching a shell command
     ls_cmd = 'ls'
     temp = '/tmp'
-    chdir(temp)
-    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=temp)
     ## filtering the output of a shell command
     out, err = p.communicate()
     return out

@@ -13,8 +13,7 @@ def long_crappy_function():
     """
     ls_cmd = 'ls'
     temp = '/tmp'
-    chdir(temp)
-    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=temp)
 
     out, err = p.communicate()
     res = []
