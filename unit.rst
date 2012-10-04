@@ -23,6 +23,12 @@ Testing
 
 **Design for testability**
 
+Teaser example
+==============
+
+.. literalinclude:: code/refactor.py
+   :pyobject: long_crappy_function
+
 
 Dynamic language
 ================
