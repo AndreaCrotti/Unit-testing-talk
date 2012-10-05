@@ -84,10 +84,8 @@ Why 2
 
 Does not fails, but still clearly **wrong**
 
-Functions
-=========
-
-*Pure function*
+Pure Functions
+==============
 
 .. literalinclude:: code/funcs.py
     :pyobject: adder
