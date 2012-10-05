@@ -3,11 +3,7 @@ import unittest
 import with_side_one
 from os import remove
 from mock import patch
-
-TMP = 'tempfile.txt'
-TEXT = 'firstline\nsecond line'
-DESIRED = TEXT.splitlines()
-
+from with_side_vars import *
 
 # first manual approach
 
@@ -20,24 +16,6 @@ def test_read_from_disk():
 
     remove(TMP)
     with_side_one.FNAME = old_fname
-
-# using unittest
-
-class TestReadFromDisk(unittest.TestCase):
-    def setUp(self):
-        self.old_fname = with_side_one.FNAME
-        with_side_one.FNAME = TMP
-        open(TMP, 'w').write(TEXT)
-
-    def tearDown(self):
-        with_side_one.FNAME = self.old_fname
-        remove(TMP)
-
-    def test_read_from_disk(self):
-        res = with_side_one.read_from_disk()
-        self.assertEqual(res, DESIRED)
-
-# TODO: should also check the condition case where the file does not exist
 
 # using unittest and mock
 @patch('with_side_one.FNAME', new=TMP)
