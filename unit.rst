@@ -212,12 +212,4 @@ Conclusion
 - testing alleviates the fear of change
 - testable code is *better code*
 
-
-Links
-=====
-
-.. _mock:
-.. _coverage:
-.. _nose:
-
 .. bad: 69edafd
