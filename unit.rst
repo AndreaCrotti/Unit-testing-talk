@@ -6,6 +6,7 @@
 
 **If it's not tested, it's broken**
 
+
 Testing
 =======
 
@@ -46,7 +47,7 @@ Why
 
 .. rst-class:: build
 
-::
+.. code-block:: python
    
     Traceback (most recent call last):
       File "funcs.py", line 45, in <module>
@@ -59,8 +60,10 @@ Why
         report_error(argO)
     NameError: global name 'argO' is not defined
 
+
 .. literalinclude:: code/funcs.py
     :pyobject: smart_function
+
     
 Why 2
 =====
