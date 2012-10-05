@@ -1,7 +1,7 @@
 import unittest
 
 
-from tdd_one import mysum, mysubstract
+from calc_1 import mysum, mysubstract
 
 
 class TestCalculator(unittest.TestCase):
