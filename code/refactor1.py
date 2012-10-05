@@ -12,8 +12,7 @@ def long_crappy_function():
     """
     ## launching a shell command
     ls_cmd = 'ls'
-    temp = '/tmp'
-    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, chdir=temp)
+    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     ## filtering the output of a shell command
     out, err = p.communicate()

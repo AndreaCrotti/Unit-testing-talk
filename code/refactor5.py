@@ -10,8 +10,7 @@ import MySQLdb
 def run_ls():
     ## launching a shell command
     ls_cmd = 'ls'
-    temp = '/tmp'
-    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=temp)
+    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     ## filtering the output of a shell command
     out, err = p.communicate()
     return out

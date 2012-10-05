@@ -11,8 +11,8 @@ def long_crappy_function():
     """Do a bit of everything
     """
     ls_cmd = 'ls'
-    temp = '/tmp'
-    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=temp)
+    p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE,
+                         stderr=subprocess.PIPE)
 
     out, err = p.communicate()
     res = []
@@ -20,8 +20,8 @@ def long_crappy_function():
         if 'to-match' in line:
             res.append(line)
 
-    dbc = MySQLdb.connect(host='host', user='user', passwd='passwd', port='port')
+    dbc = MySQLdb.connect(host='host', user='user', 
+                          passwd='passwd', port='port')
     cursor = dbc.cursor(MySQLdb.cursors.DictCursor)
-
     for r in res:
        cursor.execute('INSERT INTO table VALUES (%s)' % r)

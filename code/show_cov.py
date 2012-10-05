@@ -35,3 +35,6 @@ class TestSmartDivision(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+# Use "nosetests-2.7 show_cov.py -sv --with-cov --cov-report=html"
+# and open htmlcov/index.html to see the html report
