@@ -14,7 +14,7 @@ DROP = $(HOME)/Dropbox/Public/talks
 
 .PHONY: unit clean
 
-all: unit upload
+all: unit
 
 upload:
 	cp -Rv $(BUILDDIR) $(DROP)/
