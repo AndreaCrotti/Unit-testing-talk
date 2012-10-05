@@ -154,6 +154,8 @@ Dynamic Python
 - names are bound at run-time
 - things can change
 
+library.py:
+
 .. literalinclude:: code/library.py
 
 
@@ -161,6 +163,8 @@ Dynamic Python 2
 ================
 
 Rebinding names from other modules!
+
+prog.py:
 
 .. literalinclude:: code/prog.py
 

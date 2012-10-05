@@ -13,6 +13,7 @@ def run_ls():
     p = subprocess.Popen(ls_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     ## filtering the output of a shell command
     out, err = p.communicate()
+
     return out
 
 
