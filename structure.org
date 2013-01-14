@@ -1,5 +1,10 @@
 Plot behind the unit testing talk
 
+* TODO find some other talks about unit testing and take some material
+
+* TODO add an example of how to debug a small program that has tests and one that doesn't have tests.
+  and how writing tests can also drive you finding a possible bug.
+
 * Why need testing
 
 ** No help from the compiler

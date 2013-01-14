@@ -1,3 +1,12 @@
+.. TODO: functional core, imperative shell
+
+.. TODO: the best thing with TDD is that you will learn to write
+.. better code what's the easiest thing to test? A pure function with
+.. no side effects is the easiest thing, because you can simply
+.. declare a dictionary of input output
+
+.. add example of a "sed/like" function and how to move out the logic of replacing
+
 ==============
  Unit testing
 ==============
