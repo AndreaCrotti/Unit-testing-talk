@@ -15,6 +15,11 @@
 
 **If it's not tested, it's broken**
 
+.. image:: img/testing-goat.jpg
+
+
+.. This is 
+
 
 .. TODO: check if this slide is actually useful or not
 .. Testing
@@ -35,17 +40,23 @@
 .. **Design for testability**
 
 
+.. TODO: move this to the end maybe
+
 Benefits
 ========
 
 .. If you really embrace TDD I can promise you a few things that will
 .. really improve the way you work.
 
-.. If you have a good test coverage you will almost never need again 
+.. If you have a good test coverage you will almost never need again
+.. to spend endless time with your debugger, trying to find out what's
+.. happened, because it will be very easy to know what can be the
+.. source.
 
 - forget your debugger
+- avoid over-engineering (small steps when required)
+- lead to better design and better code
 - sleep at night
-
 
 
 Teaser example
