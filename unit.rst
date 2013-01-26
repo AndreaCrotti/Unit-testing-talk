@@ -65,6 +65,12 @@ Teaser example
 .. literalinclude:: code/refactor/refactor.py
    :pyobject: long_crappy_function
 
+.. how can I actually test this function, it takes no arguments and it
+.. needs to access to the filesystem, mysql and manipulate a list
+
+.. the great thing about python is that we can still do but it's much
+.. harder
+
 Unit testing cycle
 ==================
 
