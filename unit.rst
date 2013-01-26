@@ -58,6 +58,21 @@ Benefits
 - lead to better design and better code
 - sleep at night
 
+Unit test
+=========
+
+.. A unit test is small, isolated, testing a very small part of the
+.. code.  When a test fail you would know the 5-lines range of code
+.. that generates the problem.
+
+.. It's not a unit test if something else that it's not the specific
+.. part of the code has to work
+
+- small
+- isolated
+- localized
+- doesn't depend on anything external
+
 
 Teaser example
 ==============
@@ -110,6 +125,7 @@ Make it fail
 - the test should fail if there is a bug
 
 ::
+
     class Queue(object):
         def __init__(self):
             self.queue = []
