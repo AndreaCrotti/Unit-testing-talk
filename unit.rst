@@ -36,7 +36,7 @@ Testing
 Teaser example
 ==============
 
-.. literalinclude:: code/refactor.py
+.. literalinclude:: code/refactor/refactor.py
    :pyobject: long_crappy_function
 
 Unit testing cycle
@@ -67,6 +67,34 @@ Make it fail
 ============
 
 .. this second step is understimated but it's very important, because
+.. it removes the possibility that the test you're writing would not
+.. be always passing for a programming error, and thus completely useless
+
+.. The reason is that there is nothing wrong than having tests with
+.. simple bugs that are always passing, because in this way you would
+.. never check that the bug is in the *empty* since there is a passing
+.. test for that.
+
+- the test should fail if there is a bug
+
+::
+    class Queue(object):
+        def __init__(self):
+            self.queue = []
+    
+        def empty(self):
+            return self.queue == []
+    
+::
+
+    def test_queue_empty():
+        q = Queue()
+        assert q.empty, "Queue is not empty in the beginning"
+
+::
+
+     assert q.empty(), "Queue is not empty"
+
 
 Dynamic language
 ================
