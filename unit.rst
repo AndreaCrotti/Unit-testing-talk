@@ -39,6 +39,34 @@ Teaser example
 .. literalinclude:: code/refactor.py
    :pyobject: long_crappy_function
 
+Unit testing cycle
+==================
+
+1. add a test, focusing on the *requirements*
+2. run the test to make it fail
+3. make it pass minimally
+4. refactor
+5. back to 1
+
+.. show an example of how this is done
+
+Writing the test
+================
+
+- understand the requirement
+- focus on *how do I test it*
+
+.. TODO: example of test that shows the requirement very well
+
+.. Being able to write the tests before writing the code means that we
+.. really need to understand the requirement well, and we force
+.. ourselves to take some time thinking about them, before we get
+.. cracking writing some code.
+
+Make it fail
+============
+
+.. this second step is understimated but it's very important, because
 
 Dynamic language
 ================
