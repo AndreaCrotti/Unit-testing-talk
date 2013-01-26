@@ -16,22 +16,37 @@
 **If it's not tested, it's broken**
 
 
-Testing
-=======
+.. TODO: check if this slide is actually useful or not
+.. Testing
+.. =======
 
-- **Unit testing**:
+.. - **Unit testing**:
 
-  Testing individual units of source code, where a *unit* is the smallest testable part.
+..   Testing individual units of source code, where a *unit* is the smallest testable part.
 
-- **Integration testing**:
+.. - **Integration testing**:
 
-  Individual software modules are combined and tested as a group.
+..   Individual software modules are combined and tested as a group.
 
-- **Validation testing**:
+.. - **Validation testing**:
 
-  Software system meets specifications and that it fulfills its intended purpose.
+..   Software system meets specifications and that it fulfills its intended purpose.
 
-**Design for testability**
+.. **Design for testability**
+
+
+Benefits
+========
+
+.. If you really embrace TDD I can promise you a few things that will
+.. really improve the way you work.
+
+.. If you have a good test coverage you will almost never need again 
+
+- forget your debugger
+- sleep at night
+
+
 
 Teaser example
 ==============
@@ -94,6 +109,16 @@ Make it fail
 ::
 
      assert q.empty(), "Queue is not empty"
+
+
+Make it pass
+============
+
+.. After we wrote a test, write the simplest thing that can make it
+.. pass, and not more
+
+- simplest solution but nothing more
+
 
 
 Dynamic language
