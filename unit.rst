@@ -302,6 +302,9 @@ Automate the Mocking process.
 - mock an object
 
 *Every time I mock I do one step away from the real system*
+Functional core, imperative shell.
+
+.. _func_imp: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 
 Patching
 ========
@@ -330,6 +333,22 @@ test_lib.py:
 Mocking
 =======
 
+Mock the behaviour of an object that we don't want to run.
+
+::
+    fake_complex_object_auto = Mock(autospec=lib.ComplexObject)
+    fake_complex_object = Mock()
+    fake_complex_object.method = Mock()
+    
+::
+
+    @patch('lib.ComplexObject', new=fake_complex_object_auto)
+    def test_obj(self):
+        v = lib.Obj()
+
+    @patch('lib.ComplexObject', new=fake_complex_object)
+    def test_obj(self):
+        v = lib.Obj()
 
 
 Coverage
