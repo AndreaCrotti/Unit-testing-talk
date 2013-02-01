@@ -336,17 +336,21 @@ Mocking
 Mock the behaviour of an object that we don't want to run.
 
 ::
-    fake_complex_object_auto = Mock(autospec=lib.ComplexObject)
-    fake_complex_object = Mock()
-    fake_complex_object.method = Mock()
+
+    class ComplexObject(object):
+        def method(self):
+            print("Very complex and expensive")
+    
+    
+    class Obj(object):
+        def __init__(self):
+            self.c = ComplexObject()
+            self.c.method()
     
 ::
 
+    fake_complex_object_auto = Mock(autospec=lib.ComplexObject)
     @patch('lib.ComplexObject', new=fake_complex_object_auto)
-    def test_obj(self):
-        v = lib.Obj()
-
-    @patch('lib.ComplexObject', new=fake_complex_object)
     def test_obj(self):
         v = lib.Obj()
 
