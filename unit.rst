@@ -167,6 +167,7 @@ Dynamic language
 
 Why
 ===
+.. TODO: why we get the mock thing here??
 
 .. rst-class:: build
 
@@ -290,6 +291,19 @@ prog.py:
 .. literalinclude:: code/prog.py
 
 
+Mocking
+=======
+
+Automate the Mocking process.
+
+.. _mock: http://www.voidspace.org.uk/python/mock/
+
+- patch a name
+- mock an object
+
+*Every time I mock I do one step away from the real system*
+
+
 Coverage
 ========
 
@@ -302,22 +316,22 @@ Coverage
 .. TODO: talk about test discovery somewhere
 
 
-Testing C code
-==============
+.. the C code is not quite useful in this case
+.. Testing C code
+.. ==============
 
-- create a shared library
-- load it with *ctypes*
-- run it and check the results
+.. - create a shared library
+.. - load it with *ctypes*
+.. - run it and check the results
 
-.. literalinclude:: code/sum.c
-    :language: c
-    :lines: 1-11
+..     :language: c
+..     :lines: 1-11
 
-Testing C code 2
-================
+.. Testing C code 2
+.. ================
 
-.. literalinclude:: code/test_c.py
-    :language: python
+.. .. literalinclude:: code/test_c.py
+..     :language: python
 
 
 Conclusion
