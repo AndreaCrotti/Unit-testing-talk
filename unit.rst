@@ -303,6 +303,34 @@ Automate the Mocking process.
 
 *Every time I mock I do one step away from the real system*
 
+Patching
+========
+
+lib.py:
+
+::
+
+    from os import listdir
+    
+    def filter_dirs(pth):
+        for l in listdir(pth):
+            if 'x' in l:
+                yield l
+    
+test_lib.py:
+
+::
+
+    class TestLib(unittest.TestCase):
+        @patch('lib.listdir', new=lambda x: ['one', 'two', 'x'])
+        def test_filter_dirs(self):
+            res = list(lib.filter_dirs('.'))
+            self.assertEqual(len(res), 1)
+
+Mocking
+=======
+
+
 
 Coverage
 ========
