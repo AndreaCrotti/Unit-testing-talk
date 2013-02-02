@@ -381,8 +381,8 @@ Make it fail
 
 
 
-Teaser example
-==============
+Refactoring example
+===================
 
 .. literalinclude:: code/refactor/refactor.py
    :pyobject: long_crappy_function
