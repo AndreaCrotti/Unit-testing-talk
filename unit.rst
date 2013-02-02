@@ -267,8 +267,7 @@ Automate the Mocking process.
 
 *Every time you mock you do one step away from the real system*
 
-.. FIXME: move this somewhere else
-Functional core, imperative shell.
+**Functional core, imperative shell.**
 
 .. _func_imp: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 
@@ -415,12 +414,11 @@ Coverage 2
 Conclusion
 ==========
 
-.. rst-class:: build
-
-**Don’t worry about tests, Chuck Norris’s test cases cover your code too.**
-
 - tests are good
 - tests are documentation
 - testing is easy
 - testing alleviates the fear of change
 - testable code is *better code*
+
+.. image:: img/happy.jpg
+   :width: 300
