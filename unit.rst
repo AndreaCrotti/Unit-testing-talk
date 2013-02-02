@@ -60,9 +60,15 @@ Benefits
 
 
 
-
 Dynamic language
 ================
+
+.. So Python is a great language, but it's also very dynamic and
+.. basically it only gives you runtime errors (except for syntax
+.. errors).  You can use some great tools like Pylint to get a much
+.. better static analysis but it's still far from what you can get
+.. from a less dynamic language.
+.. So more than enough rope to hang yourself!
 
 *Python is awesome*, but...
 
@@ -74,7 +80,9 @@ Dynamic language
 
 Why
 ===
-.. TODO: why we get the mock thing here??
+.. Here for example I have this function that under some rare
+.. condition would fail
+.. Can you see any problem with it?
 
 .. rst-class:: build
 
@@ -98,6 +106,15 @@ Fail
     
 Why 2
 =====
+
+.. Here is another example from my personal experience, I actually got
+.. bitten many times by this.  What happens if you pass by mistake a
+.. string instead of a list of strings to a function that takes an
+.. iterable?
+
+.. Well thanks to duck typing it just threats the string as an
+.. iterable and gives you a result, which is most likely not the one
+.. you want!
 
 .. rst-class:: build
 
@@ -124,6 +141,10 @@ Fail
 
 Unit test
 =========
+
+.. The good news though is that Python is really awesome for writing
+.. unit tests, (I even used it in the past to unit test java code with
+.. Jython for example).
 
 .. A unit test is small, isolated, testing a very small part of the
 .. code.  When a test fail you would know the 5-lines range of code
