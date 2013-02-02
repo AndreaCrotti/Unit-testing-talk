@@ -23,6 +23,8 @@ Twitter: @andreacrotti
 
 Slides: https://github.com/AndreaCrotti/Unit-testing-talk
 
+.. image:: img/wazoku.png
+
 
 Benefits
 ========
@@ -268,7 +270,9 @@ Automate the Mocking process.
 - patch a name
 - mock an object
 
-*Every time I mock I do one step away from the real system*
+*Every time you mock you do one step away from the real system*
+
+.. FIXME: move this somewhere else
 Functional core, imperative shell.
 
 .. _func_imp: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
@@ -323,8 +327,8 @@ Mock the behaviour of an object that we don't want to run.
 
 
 
-Unit testing cycle
-==================
+TDD cycle
+=========
 
 1. add a test, focusing on the *requirements*
 2. run the test to make it fail
