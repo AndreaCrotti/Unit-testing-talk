@@ -221,6 +221,22 @@ Side effects
 Dependency injection
 ====================
 
+.. literalinclude:: code/dep_inj.py
+    :lines: 1-6
+
+How do I remove the external dependecy?
+
+*Dependency injection*
+
+Dependency injection 2
+======================
+
+.. literalinclude:: code/dep_inj.py
+    :pyobject: ReportDep
+    
+.. literalinclude:: code/dep_inj.py
+    :pyobject: test_report
+
 
 Dynamic Python
 ==============
