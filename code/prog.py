@@ -1,12 +1,8 @@
-# import library
-
-# library.run_func()
-
 import library
 
+library.run_func()
 def failing():
     print("In changed function")
 
-library.function = failing
-# FIXME: not working as expected
+library.lib_func = failing
 library.run_func()
