@@ -218,98 +218,8 @@ Side effects
 
 **Hard to test!!**
 
-Testing sum
-===========
-
-.. literalinclude:: code/funcs.py
-    :pyobject: test_adder
-
-.. literalinclude:: code/funcs.py
-    :pyobject: adder
-
-
-Unit testing cycle
-==================
-
-1. add a test, focusing on the *requirements*
-2. run the test to make it fail
-3. make it pass minimally
-4. refactor
-5. back to 1
-
-.. show an example of how this is done
-
-Writing the test
-================
-
-- understand the requirement
-- focus on *how do I test it*
-
-.. TODO: example of test that shows the requirement very well
-
-.. Being able to write the tests before writing the code means that we
-.. really need to understand the requirement well, and we force
-.. ourselves to take some time thinking about them, before we get
-.. cracking writing some code.
-
-Make it fail
-============
-
-.. this second step is understimated but it's very important, because
-.. it removes the possibility that the test you're writing would not
-.. be always passing for a programming error, and thus completely useless
-
-.. The reason is that there is nothing wrong than having tests with
-.. simple bugs that are always passing, because in this way you would
-.. never check that the bug is in the *empty* since there is a passing
-.. test for that.
-
-- the test should fail if there is a bug
-
-::
-
-    class Queue(object):
-        def __init__(self):
-            self.queue = []
-    
-        def empty(self):
-            return self.queue == []
-    
-::
-
-    def test_queue_empty():
-        q = Queue()
-        assert q.empty, "Queue is not empty in the beginning"
-
-::
-
-     assert q.empty(), "Queue is not empty"
-
-
-Make it pass
-============
-
-.. After we wrote a test, write the simplest thing that can make it
-.. pass, and not more
-
-- simplest solution but nothing more
-
-.. show some examples of why these things can be bad (passing wrong types,
-.. raising things from anywhere and so on)
-
-
-
-Teaser example
-==============
-
-.. literalinclude:: code/refactor/refactor.py
-   :pyobject: long_crappy_function
-
-.. how can I actually test this function, it takes no arguments and it
-.. needs to access to the filesystem, mysql and manipulate a list
-
-.. the great thing about python is that we can still do but it's much
-.. harder
+Dependency injection
+====================
 
 
 Dynamic Python
@@ -395,6 +305,91 @@ Mock the behaviour of an object that we don't want to run.
     @patch('lib.ComplexObject', new=fake_complex_object_auto)
     def test_obj(self):
         v = lib.Obj()
+
+
+
+Unit testing cycle
+==================
+
+1. add a test, focusing on the *requirements*
+2. run the test to make it fail
+3. make it pass minimally
+4. refactor
+5. back to 1
+
+.. show an example of how this is done
+
+Writing the test
+================
+
+- understand the requirement
+- focus on *how do I test it*
+
+.. TODO: example of test that shows the requirement very well
+
+.. Being able to write the tests before writing the code means that we
+.. really need to understand the requirement well, and we force
+.. ourselves to take some time thinking about them, before we get
+.. cracking writing some code.
+
+Make it fail
+============
+
+.. this second step is understimated but it's very important, because
+.. it removes the possibility that the test you're writing would not
+.. be always passing for a programming error, and thus completely useless
+
+.. The reason is that there is nothing wrong than having tests with
+.. simple bugs that are always passing, because in this way you would
+.. never check that the bug is in the *empty* since there is a passing
+.. test for that.
+
+- the test should fail if there is a bug
+
+::
+
+    class Queue(object):
+        def __init__(self):
+            self.queue = []
+    
+        def empty(self):
+            return self.queue == []
+    
+::
+
+    def test_queue_empty():
+        q = Queue()
+        assert q.empty, "Queue is not empty in the beginning"
+
+::
+
+     assert q.empty(), "Queue is not empty"
+
+
+Make it pass
+============
+
+.. After we wrote a test, write the simplest thing that can make it
+.. pass, and not more
+
+- simplest solution but nothing more
+
+.. show some examples of why these things can be bad (passing wrong types,
+.. raising things from anywhere and so on)
+
+
+
+Teaser example
+==============
+
+.. literalinclude:: code/refactor/refactor.py
+   :pyobject: long_crappy_function
+
+.. how can I actually test this function, it takes no arguments and it
+.. needs to access to the filesystem, mysql and manipulate a list
+
+.. the great thing about python is that we can still do but it's much
+.. harder
 
 
 Coverage
