@@ -153,19 +153,79 @@ Unit test
 .. It's not a unit test if something else that it's not the specific
 .. part of the code has to work
 
+.. The fast is really important actually, because for TDD you really
+.. need to run your tests continuosly, before every commit, and if you
+.. start to have slow tests it will get too annoying very quickly.
+
 - small
 - isolated
 - localized
 - doesn't depend on anything external
+- *fast*
 
 Not a unit test
 ===============
 
+.. Here is an example 
+
 .. literalinclude:: code/not_unit.py
 
-Is a unit test
+Change of perspective
+=====================
+
+.. TODO: add 
+
+Not *how I hack a solution for this*, but *how do I test it*?
+
+What is the easiest thing to test?
+
+Pure Functions
 ==============
 
+.. literalinclude:: code/funcs.py
+    :pyobject: adder
+
+Passing input X to function F will always return the same output Y.
+
+- adder(1, 2) = 3
+- adder(3, 4) = 7
+
+.. show how to test pure functions, in calc_one.py and calc_2.py
+
+
+Testing pure functions
+======================
+.. literalinclude:: code/calc_1.py
+    :lines: 1-16
+
+.. show examples from calc_1.py and calc_2.py
+
+Side effects
+============
+
+*In addition to returning a value, it also modifies some state or has an observable interaction with calling functions or the outside world*
+
+
+.. literalinclude:: code/funcs.py
+    :pyobject: silly_function
+
+::
+
+     >>> funcs.silly_function(1)
+     3
+     >>> funcs.silly_function(1)
+     4
+
+**Hard to test!!**
+
+Testing sum
+===========
+
+.. literalinclude:: code/funcs.py
+    :pyobject: test_adder
+
+.. literalinclude:: code/funcs.py
+    :pyobject: adder
 
 
 Unit testing cycle
@@ -237,53 +297,6 @@ Make it pass
 .. show some examples of why these things can be bad (passing wrong types,
 .. raising things from anywhere and so on)
 
-Pure Functions
-==============
-
-.. literalinclude:: code/funcs.py
-    :pyobject: adder
-
-Passing input X to function F will always return the same output Y.
-
-- adder(1, 2) = 3
-- adder(3, 4) = 7
-
-.. show how to test pure functions, in calc_one.py and calc_2.py
-
-
-Testing pure functions
-======================
-.. literalinclude:: code/calc_1.py
-    :lines: 1-16
-
-.. show examples from calc_1.py and calc_2.py
-
-Side effects
-============
-
-*In addition to returning a value, it also modifies some state or has an observable interaction with calling functions or the outside world*
-
-
-.. literalinclude:: code/funcs.py
-    :pyobject: silly_function
-
-::
-
-     >>> funcs.silly_function(1)
-     3
-     >>> funcs.silly_function(1)
-     4
-
-**Hard to test!!**
-
-Testing sum
-===========
-
-.. literalinclude:: code/funcs.py
-    :pyobject: test_adder
-
-.. literalinclude:: code/funcs.py
-    :pyobject: adder
 
 
 Teaser example
