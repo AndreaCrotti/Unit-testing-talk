@@ -1,7 +1,8 @@
+# import library
+
+# library.run_func()
+
 import library
-
-library.run_func()
-
 
 def failing():
     print("In changed function")

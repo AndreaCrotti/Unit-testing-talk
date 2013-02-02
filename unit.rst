@@ -6,7 +6,7 @@
 
 .. First of all an introduction about myself, I'm not a great expert
 .. of Test Driven Development, because I started to do it properly
-.. only 6 month ago.
+.. only 6 month ago, so please correct me if I say something wrong.
 
 .. However, having worked with and without I really decided that I'm
 .. never going to do the mistake to work in another way anymore, and
@@ -32,9 +32,6 @@ Working for http://www.wazoku.com/:
 Benefits
 ========
 
-.. If you really embrace TDD I can promise you a few things that will
-.. really improve the way you work.
-
 .. Here are some of the benefits that you I think will gain.
 
 .. If you have a good test coverage you will almost never need again
@@ -55,7 +52,6 @@ Benefits
 - *sleep at night*
 
 
-
 Dynamic language
 ================
 
@@ -68,7 +64,7 @@ Dynamic language
 
 *Python is awesome*, but...
 
-- no type checking
+- duck typing
 - no checked exceptions
 - no compilation
 
@@ -156,9 +152,8 @@ Unit test
 - small
 - isolated
 - localized
-.. FIXME: check
-- don't depend on anything external
-- *fast*
+- without external dependencies
+- **fast**
 
 Not a unit test
 ===============
@@ -172,7 +167,7 @@ Change of perspective
 
 .. TODO: add 
 
-Not *how I hack a solution for this*, but *how do I test it*?
+Not *how I hack a solution for this*, but **how do I test it**?
 
 What is the easiest thing to test?
 
