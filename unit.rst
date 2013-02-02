@@ -327,7 +327,7 @@ TDD cycle
 
 1. add a test, focusing on the *requirements*
 2. run the test to make it fail
-3. make it pass minimally
+3. make it pass
 4. refactor
 5. back to 1
 
@@ -340,6 +340,14 @@ TDD cycle
 .. really need to understand the requirement well, and we force
 .. ourselves to take some time thinking about them, before we get
 .. cracking writing some code.
+
+
+.. Make it pass minimally:
+.. After we wrote a test, write the simplest thing that can make it
+.. pass, and not more
+
+.. show some examples of why these things can be bad (passing wrong types,
+.. raising things from anywhere and so on)
 
 
 Make it fail
@@ -370,18 +378,6 @@ Make it fail
     def test_queue_empty():
         q = Queue()
         assert q.empty, "Queue is not empty in the beginning"
-
-
-Make it pass
-============
-
-.. After we wrote a test, write the simplest thing that can make it
-.. pass, and not more
-
-- simplest solution but nothing more
-
-.. show some examples of why these things can be bad (passing wrong types,
-.. raising things from anywhere and so on)
 
 
 
