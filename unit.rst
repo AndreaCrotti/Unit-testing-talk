@@ -331,20 +331,16 @@ TDD cycle
 4. refactor
 5. back to 1
 
+.. image:: img/tdd.jpg
+
 .. show an example of how this is done
 
-Writing the test
-================
-
-- understand the requirement
-- focus on *how do I test it*
-
-.. TODO: example of test that shows the requirement very well
-
+.. Write the test:
 .. Being able to write the tests before writing the code means that we
 .. really need to understand the requirement well, and we force
 .. ourselves to take some time thinking about them, before we get
 .. cracking writing some code.
+
 
 Make it fail
 ============
@@ -374,10 +370,6 @@ Make it fail
     def test_queue_empty():
         q = Queue()
         assert q.empty, "Queue is not empty in the beginning"
-
-::
-
-     assert q.empty(), "Queue is not empty"
 
 
 Make it pass
