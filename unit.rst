@@ -422,3 +422,19 @@ Conclusion
 
 .. image:: img/happy.jpg
    :width: 300
+
+
+Resources
+=========
+
+.. _tip: http://lists.idyll.org/listinfo/testing-in-python
+.. _nose: https://nose.readthedocs.org/en/latest/
+.. _mock: http://www.voidspace.org.uk/python/mock/
+.. _coverage: http://nedbatchelder.com/code/coverage/
+
+- tip_
+- nose_
+- mock_
+- coverage_
+
+.. image:: img/questions.jpg
