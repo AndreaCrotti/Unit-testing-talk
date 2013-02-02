@@ -232,7 +232,7 @@ Dependency injection 2
     :pyobject: test_report
 
 
-*Gets ugly*
+**UGLY**
 
 Dynamic Python
 ==============
@@ -405,6 +405,13 @@ Coverage
 .. integrates well with nose and other test runners
 .. TODO: talk about test discovery somewhere
 
+Coverage 2
+==========
+
+.. literalinclude:: code/show_cov.py
+   :pyobject: smart_division
+
+
 Conclusion
 ==========
 
@@ -417,5 +424,3 @@ Conclusion
 - testing is easy
 - testing alleviates the fear of change
 - testable code is *better code*
-
-.. bad: 69edafd
