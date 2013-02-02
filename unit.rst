@@ -23,7 +23,10 @@ Twitter: @andreacrotti
 
 Slides: https://github.com/AndreaCrotti/Unit-testing-talk
 
+Working for http://www.wazoku.com/:
+
 .. image:: img/wazoku.png
+   :height: 70
 
 
 Benefits
@@ -47,12 +50,9 @@ Benefits
 .. myself that I did a good job.
 
 - forget your debugger
-.. TODO: fixme this 
-- avoid over-engineering (small steps when required)
-- better design and better code
-.. FIXME: not good
-- do only what necessary
-- sleep at night
+- write better code
+- only write what you need
+- *sleep at night*
 
 
 
