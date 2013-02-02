@@ -169,9 +169,9 @@ Change of perspective
 
 Not *how I hack a solution for this*, but **how do I test it**?
 
-What is the easiest thing to test?
+.. image:: img/lazy.jpg
 
-.. TODO: add something
+What is the easiest thing to test?
 
 Pure Functions
 ==============
@@ -416,25 +416,6 @@ Coverage
 
 .. integrates well with nose and other test runners
 .. TODO: talk about test discovery somewhere
-
-
-.. the C code is not quite useful in this case
-.. Testing C code
-.. ==============
-
-.. - create a shared library
-.. - load it with *ctypes*
-.. - run it and check the results
-
-..     :language: c
-..     :lines: 1-11
-
-.. Testing C code 2
-.. ================
-
-.. .. literalinclude:: code/test_c.py
-..     :language: python
-
 
 Conclusion
 ==========
