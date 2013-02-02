@@ -1,46 +1,36 @@
-.. TODO: functional core, imperative shell
-
 .. TODO: the best thing with TDD is that you will learn to write
 .. better code what's the easiest thing to test? A pure function with
 .. no side effects is the easiest thing, because you can simply
 .. declare a dictionary of input output
 
-.. add example of a "sed/like" function and how to move out the logic of replacing
+.. TODO: add example of a "sed/like" function and how to move out the logic of replacing
+
+.. TODO: talk about dependency injection as another possible alternative
+.. to solve the external dependencies problem.
 
 ==============
  Unit testing
 ==============
 
-.. TODO: where should I talk about Designing for testability??
+.. First of all an introduction about myself, I'm not a great expert
+.. of Test Driven Development, because I started to do it properly
+.. only 6 month ago.
+
+.. However, having worked with and without I really decided that I'm
+.. never going to do the mistake to work in another way anymore, and
+.. I'm also now doing pushing all the people around me to do the same.
+
+.. I recently changed job and in my new job there are no almost no
+.. tests, I created the whole infrastrure and told my colleagues how
+.. to do them and we already see the benefits.
 
 **If it's not tested, it's broken**
 
-.. image:: img/testing-goat.jpg
 
+Twitter: @andreacrotti
 
-.. This is 
+Slides: https://github.com/AndreaCrotti/Unit-testing-talk
 
-
-.. TODO: check if this slide is actually useful or not
-.. Testing
-.. =======
-
-.. - **Unit testing**:
-
-..   Testing individual units of source code, where a *unit* is the smallest testable part.
-
-.. - **Integration testing**:
-
-..   Individual software modules are combined and tested as a group.
-
-.. - **Validation testing**:
-
-..   Software system meets specifications and that it fulfills its intended purpose.
-
-.. **Design for testability**
-
-
-.. TODO: move this to the end maybe
 
 Benefits
 ========
@@ -48,14 +38,24 @@ Benefits
 .. If you really embrace TDD I can promise you a few things that will
 .. really improve the way you work.
 
+.. Here are some of the benefits that you I think will gain.
+
 .. If you have a good test coverage you will almost never need again
 .. to spend endless time with your debugger, trying to find out what's
 .. happened, because it will be very easy to know what can be the
 .. source.
 
+.. The last one seems exagerated but for me it was not.  When I had
+.. some code without tests and someone asked me if it worked, the best
+.. answer I could give is "it didn't fail yet", even if I thought
+.. the code was good.
+.. But I had no proof of what were the boundaries, I could only trust
+.. myself that I did a good job.
+
 - forget your debugger
 - avoid over-engineering (small steps when required)
-- lead to better design and better code
+- better design and better code
+- do only what necessary
 - sleep at night
 
 
@@ -68,20 +68,20 @@ Why
 .. code-block:: python
    
     Traceback (most recent call last):
-      File "funcs.py", line 45, in <module>
-        test_smart()
-      File "/home/andrea/.local/lib/python2.7/site-packages/mock.py", line 1224, in patched
-        return func(*args, **keywargs)
-      File "funcs.py", line 24, in test_smart
-        smart_function(100)
-      File "funcs.py", line 17, in smart_function
+      File "rare_cond.py", line 21, in <module>
+        smart_function(42)
+      File "rare_cond.py", line 7, in smart_function
         report_error(argO)
     NameError: global name 'argO' is not defined
-
-
-.. literalinclude:: code/funcs.py
+    
+.. literalinclude:: code/rare_cond.py
     :pyobject: smart_function
 
+Fail
+====
+
+.. image:: img/testing-goat.jpg
+   :scale: 150%
     
 Why 2
 =====
@@ -101,6 +101,12 @@ Why 2
     :pyobject: uppercase_words
 
 Does not fails, but still clearly **wrong**
+
+Fail
+====
+
+.. image:: img/testing-goat.jpg
+   :scale: 150%
 
 
 Unit test
