@@ -250,3 +250,11 @@ from TDD tend to be very thorough: they will detect any unexpected
 changes in the code's behaviour. This detects problems that can arise
 where a change later in the development cycle unexpectedly alters
 other functionality.
+
+
+* Structure
+  - why it's important, talking specifically how Python behaves,
+    show examples of great failures
+
+  - what is unit testing
+  - what is TDD, and how it work

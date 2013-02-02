@@ -74,18 +74,6 @@ Unit test
 - doesn't depend on anything external
 
 
-Teaser example
-==============
-
-.. literalinclude:: code/refactor/refactor.py
-   :pyobject: long_crappy_function
-
-.. how can I actually test this function, it takes no arguments and it
-.. needs to access to the filesystem, mysql and manipulate a list
-
-.. the great thing about python is that we can still do but it's much
-.. harder
-
 Unit testing cycle
 ==================
 
@@ -247,19 +235,6 @@ Side effects
 
 **Hard to test!!**
 
-
-Unit testing
-============
-
-Test Driven Development:
-
-1. write a specific test
-2. watch it fail
-3. make it pass
-4. go back to 1
-
-.. show an example of this approach
-
 Testing sum
 ===========
 
@@ -268,6 +243,19 @@ Testing sum
 
 .. literalinclude:: code/funcs.py
     :pyobject: adder
+
+
+Teaser example
+==============
+
+.. literalinclude:: code/refactor/refactor.py
+   :pyobject: long_crappy_function
+
+.. how can I actually test this function, it takes no arguments and it
+.. needs to access to the filesystem, mysql and manipulate a list
+
+.. the great thing about python is that we can still do but it's much
+.. harder
 
 
 Dynamic Python
