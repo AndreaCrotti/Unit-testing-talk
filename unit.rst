@@ -58,6 +58,51 @@ Benefits
 - lead to better design and better code
 - sleep at night
 
+
+Why
+===
+.. TODO: why we get the mock thing here??
+
+.. rst-class:: build
+
+.. code-block:: python
+   
+    Traceback (most recent call last):
+      File "funcs.py", line 45, in <module>
+        test_smart()
+      File "/home/andrea/.local/lib/python2.7/site-packages/mock.py", line 1224, in patched
+        return func(*args, **keywargs)
+      File "funcs.py", line 24, in test_smart
+        smart_function(100)
+      File "funcs.py", line 17, in smart_function
+        report_error(argO)
+    NameError: global name 'argO' is not defined
+
+
+.. literalinclude:: code/funcs.py
+    :pyobject: smart_function
+
+    
+Why 2
+=====
+
+.. rst-class:: build
+
+::
+
+    ['W', 'O', 'R', 'D', '1']
+
+::
+
+    >>> uppercase_words("word1")
+
+
+.. literalinclude:: code/wrong.py
+    :pyobject: uppercase_words
+
+Does not fails, but still clearly **wrong**
+
+
 Unit test
 =========
 
@@ -152,49 +197,6 @@ Dynamic language
 
 .. show some examples of why these things can be bad (passing wrong types,
 .. raising things from anywhere and so on)
-
-Why
-===
-.. TODO: why we get the mock thing here??
-
-.. rst-class:: build
-
-.. code-block:: python
-   
-    Traceback (most recent call last):
-      File "funcs.py", line 45, in <module>
-        test_smart()
-      File "/home/andrea/.local/lib/python2.7/site-packages/mock.py", line 1224, in patched
-        return func(*args, **keywargs)
-      File "funcs.py", line 24, in test_smart
-        smart_function(100)
-      File "funcs.py", line 17, in smart_function
-        report_error(argO)
-    NameError: global name 'argO' is not defined
-
-
-.. literalinclude:: code/funcs.py
-    :pyobject: smart_function
-
-    
-Why 2
-=====
-
-.. rst-class:: build
-
-::
-
-    ['W', 'O', 'R', 'D', '1']
-
-::
-
-    >>> uppercase_words("word1")
-
-
-.. literalinclude:: code/wrong.py
-    :pyobject: uppercase_words
-
-Does not fails, but still clearly **wrong**
 
 Pure Functions
 ==============
