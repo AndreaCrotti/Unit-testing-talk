@@ -1,12 +1,4 @@
-.. TODO: the best thing with TDD is that you will learn to write
-.. better code what's the easiest thing to test? A pure function with
-.. no side effects is the easiest thing, because you can simply
-.. declare a dictionary of input output
-
 .. TODO: add example of a "sed/like" function and how to move out the logic of replacing
-
-.. TODO: talk about dependency injection as another possible alternative
-.. to solve the external dependencies problem.
 
 ==============
  Unit testing
@@ -53,8 +45,10 @@ Benefits
 .. myself that I did a good job.
 
 - forget your debugger
+.. TODO: fixme this 
 - avoid over-engineering (small steps when required)
 - better design and better code
+.. FIXME: not good
 - do only what necessary
 - sleep at night
 
@@ -160,7 +154,8 @@ Unit test
 - small
 - isolated
 - localized
-- doesn't depend on anything external
+.. FIXME: check
+- don't depend on anything external
 - *fast*
 
 Not a unit test
@@ -178,6 +173,8 @@ Change of perspective
 Not *how I hack a solution for this*, but *how do I test it*?
 
 What is the easiest thing to test?
+
+.. TODO: add something
 
 Pure Functions
 ==============
@@ -237,6 +234,8 @@ Dependency injection 2
 .. literalinclude:: code/dep_inj.py
     :pyobject: test_report
 
+
+*Gets ugly*
 
 Dynamic Python
 ==============

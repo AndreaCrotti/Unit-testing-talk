@@ -3,7 +3,7 @@ import report
 
 
 class TestReporting(unittest.TestCase):
-    def setUp():
+    def setUp(self):
         dbc = MySQLdb.connect(host='host', user='user', passwd='passwd', port='port')
         cursor = dbc.cursor(MySQLdb.cursors.DictCursor)
         # insert 10 values in the db
