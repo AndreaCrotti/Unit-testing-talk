@@ -59,6 +59,19 @@ Benefits
 - sleep at night
 
 
+
+
+Dynamic language
+================
+
+*Python is awesome*, but...
+
+- no type checking
+- no checked exceptions
+- no compilation
+
+.. image:: img/noose.jpg
+
 Why
 ===
 .. TODO: why we get the mock thing here??
@@ -123,6 +136,15 @@ Unit test
 - isolated
 - localized
 - doesn't depend on anything external
+
+Not a unit test
+===============
+
+.. literalinclude:: code/not_unit.py
+
+Is a unit test
+==============
+
 
 
 Unit testing cycle
@@ -190,16 +212,6 @@ Make it pass
 .. pass, and not more
 
 - simplest solution but nothing more
-
-
-
-Dynamic language
-================
-
-- no type checking
-- no checked exceptions
-- no compilation
-- monkey patching
 
 .. show some examples of why these things can be bad (passing wrong types,
 .. raising things from anywhere and so on)
