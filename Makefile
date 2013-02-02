@@ -12,9 +12,9 @@ ALLSPHINXOPTS   =  $(PAPEROPT_$(PAPER)) $(SPHINXOPTS)
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 DROP = $(HOME)/Dropbox/Public/talks
 
-.PHONY: unit clean
+.PHONY: unit clean upload
 
-all: unit
+all: unit upload
 
 upload:
 	cp -Rv $(BUILDDIR) $(DROP)/
