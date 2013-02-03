@@ -194,7 +194,19 @@ Testing pure functions
 Side effects
 ============
 
-*In addition to returning a value, it also modifies some state or has an observable interaction with calling functions or the outside world*
+.. unfortunately life is not so simple, and we can't only work with
+.. pure functions, otherwise our program would not be able to do
+.. anything useful.
+
+.. We also have side effects, where a side effect happens whenever a
+.. function in addition to returning a value, also modifies some state
+.. or has an observable interaction with calling functions.
+
+.. For example, a function might modify a global or static variable,
+.. modify one of its arguments, raise an exception, write data to a
+.. display or file, read data, or call other side-effecting functions.
+
+**In addition to returning a value, it also modifies some state or has an observable interaction with calling functions or the outside world**
 
 
 .. literalinclude:: code/funcs.py
@@ -258,7 +270,7 @@ Automate the Mocking process.
 
 - patch a name
 - mock an object
-
+.. _func_imp: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 *Every time you mock you do one step away from the real system*
 
 **Functional core, imperative shell**
