@@ -1,5 +1,3 @@
-.. TODO: add example of a "sed/like" function and how to move out the logic of replacing
-
 ==============
  Unit testing
 ==============
@@ -32,8 +30,6 @@ Working for http://www.wazoku.com/:
 Benefits
 ========
 
-.. Here are some of the benefits that you I think will gain.
-
 .. If you have a good test coverage you will almost never need again
 .. to spend endless time with your debugger, trying to find out what's
 .. happened, because it will be very easy to know what can be the
@@ -61,6 +57,7 @@ Dynamic language
 .. better static analysis but it's still far from what you can get
 .. from a less dynamic language.
 .. So more than enough rope to hang yourself!
+
 
 *Python is awesome*, but...
 
@@ -237,8 +234,7 @@ Dependency injection 2
 Dynamic Python
 ==============
 
-- names are bound at run-time
-- things can change
+- run-time name binding
 
 library.py:
 
@@ -260,16 +256,13 @@ Mocking
 
 Automate the Mocking process.
 
-.. _mock: http://www.voidspace.org.uk/python/mock/
-
 - patch a name
 - mock an object
 
 *Every time you mock you do one step away from the real system*
 
-**Functional core, imperative shell.**
+**Functional core, imperative shell**
 
-.. _func_imp: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 
 Patching
 ========
@@ -431,6 +424,7 @@ Resources
 .. _nose: https://nose.readthedocs.org/en/latest/
 .. _mock: http://www.voidspace.org.uk/python/mock/
 .. _coverage: http://nedbatchelder.com/code/coverage/
+.. _func_imp: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 
 - tip_
 - nose_
