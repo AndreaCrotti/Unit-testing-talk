@@ -162,13 +162,19 @@ Not a unit test
 Change of perspective
 =====================
 
-.. TODO: add 
+.. When you start to write your code with unit tests in mind, there is
+.. a big change of perspective.  The question is not anymore *how do I
+.. get this working*, but *how do I test it*?  And it turns out that
+.. this question is much more valuable, becuase in the end you want to
+.. ship something that you can prove to be working.
 
-Not *how I hack a solution for this*, but **how do I test it**?
+.. But programmers are lazy as you know
+
+Not *how do I get this working?*, but **how do I test it?**
 
 .. image:: img/lazy.jpg
 
-What is the easiest thing to test?
+- What is the easiest thing to test?
 
 Pure Functions
 ==============
