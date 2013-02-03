@@ -279,10 +279,7 @@ Mocking
 
 Automate the Mocking process.
 
-- patch a name
-- mock an object
-
-*Every time you mock you do one step away from the real system*
+**Every time you mock you do one step away from the real system**
 
 **Functional core, imperative shell**
 
