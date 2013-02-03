@@ -179,9 +179,13 @@ Not *how do I get this working?*, but **how do I test it?**
 Pure Functions
 ==============
 
-.. literalinclude:: code/funcs.py
-    :pyobject: adder
+.. We have a pure function whenever it returns always the same output
+.. for the same input, without changing anything in the global environment.
 
+.. The most stupid example can be the addition function.  The great
+.. thing is that pure functions are trivial to test.  The only thing
+.. you need to do is to write an input-output table of interesting
+.. couples to test and check all of them.
 Passing input X to function F will always return the same output Y.
 
 - adder(1, 2) = 3
