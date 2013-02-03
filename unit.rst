@@ -1,6 +1,7 @@
-==============
- Unit testing
-==============
+==================
+ TDD from scratch
+==================
+
 
 .. First of all an introduction about myself, I'm not a great expert
 .. of Test Driven Development, because I started to do it properly
@@ -186,7 +187,7 @@ Pure Functions
 .. thing is that pure functions are trivial to test.  The only thing
 .. you need to do is to write an input-output table of interesting
 .. couples to test and check all of them.
-Passing input X to function F will always return the same output Y.
+.. Passing input X to function F will always return the same output Y.
 
 - adder(1, 2) = 3
 - adder(3, 4) = 7
@@ -280,7 +281,7 @@ Automate the Mocking process.
 
 - patch a name
 - mock an object
-.. _func_imp: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
+
 *Every time you mock you do one step away from the real system*
 
 **Functional core, imperative shell**
