@@ -165,7 +165,7 @@ Change of perspective
 .. When you start to write your code with unit tests in mind, there is
 .. a big change of perspective.  The question is not anymore *how do I
 .. get this working*, but *how do I test it*?  And it turns out that
-.. this question is much more valuable, becuase in the end you want to
+.. this question is much more valuable, because in the end you want to
 .. ship something that you can prove to be working.
 
 .. But programmers are lazy as you know
@@ -233,7 +233,7 @@ Dependency injection
 .. literalinclude:: code/dep_inj.py
     :lines: 1-6
 
-How do I remove the external dependecy?
+How do I remove the external dependency?
 
 *Dependency injection*
 
@@ -407,13 +407,16 @@ Refactoring example
 Coverage
 ========
 
+http://nedbatchelder.com/code/coverage/
+
 - set a tracer function
 - runs a script
 - keep track of all the lines executed
 - show a report
 
-.. integrates well with nose and other test runners
-.. TODO: talk about test discovery somewhere
+As simple as:
+
+*nosetests show_cov.py --with-cov --cov-report=html*
 
 Coverage 2
 ==========
