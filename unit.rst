@@ -10,10 +10,6 @@
 .. never going to do the mistake to work in another way anymore, and
 .. I'm also now doing pushing all the people around me to do the same.
 
-.. I recently changed job and in my new job there are no almost no
-.. tests, I created the whole infrastrure and told my colleagues how
-.. to do them and we already see the benefits.
-
 **If it's not tested, it's broken**
 
 
@@ -59,7 +55,7 @@ Dynamic language
 .. So more than enough rope to hang yourself!
 
 
-*Python is awesome*, but...
+Python is **awesome**, but...
 
 - duck typing
 - no checked exceptions
@@ -154,8 +150,12 @@ Unit test
 
 Not a unit test
 ===============
+.. TODO: see if this should be there at all, maybe it's not so
+.. necessary
 
-.. Here is an example 
+.. Here is an example of what not a unit test is, the following code
+.. should test a reporting function, but before doing that it needs to
+.. put some values into a database.
 
 .. literalinclude:: code/not_unit.py
 

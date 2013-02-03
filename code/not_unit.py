@@ -11,4 +11,3 @@ class TestReporting(unittest.TestCase):
     def test_report(self):
         rep = report.get_report()
         self.assertEqual(len(rep), 10)
-
